@@ -20,11 +20,14 @@ body {
 } 
 .main {
     position: relative;
+    border: 1px solid red; /*убрать*/
 }
 .footer {
     border: 1px solid orange;
+    background: #2678c0;
 }
 .container {
+    max-width: 1440px;
     margin: 0 auto;
 }
 img {
@@ -73,6 +76,22 @@ img {
     transition: .6s;
     cursor: pointer;
 }/* Конец стилей меню */
+
+/*Стили списка контактов*/
+.contact-list {
+    padding-left: 2rem;
+    list-style-type: none;
+}
+.contact-list li {
+    list-style-type: none;
+    line-height: 3;
+}
+.github {
+    background: url("/rsschool-cv/assets/GitHub_Logo.png") 0 50% no-repeat;
+    list-style-type: none;
+    padding-left: 50px;
+}
+/*Конец стилей списка контактов*/
 h1 {
     font-size: 40px;
 }
@@ -90,13 +109,13 @@ html {
 .main-container {
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid red; /*убрать*/
 }
-.section-contacts {
-    position: absolute;
-    top: 30px;
-    right: 40px;
+.section-profile {
+    border: 1px solid red; /*убрать*/
+    width: 50%;
+    text-align: center
 }
-  
 .section {
     width: 50%;
 }
