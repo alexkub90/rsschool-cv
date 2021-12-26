@@ -20,7 +20,7 @@ body {
 } 
 .main {
     position: relative;
-    border: 1px solid red; /*убрать*/
+    /*border: 1px solid red; убрать*/
 }
 .footer {
     border: 1px solid orange;
@@ -110,10 +110,10 @@ html {
 .main-container {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid red; /*убрать*/
+    /*border: 1px solid red; убрать*/
 }
 .section-profile {
-    border: 1px solid red; /*убрать*/
+    /*border: 1px solid red; убрать*/
     width: 50%;
     text-align: center
 }
