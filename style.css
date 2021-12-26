@@ -1,5 +1,105 @@
-<style>
- .class-1 {
-     font-size: 12px;
- }
- </style>
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /*прижаты к границам*/
+}
+* {
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+}
+.header {
+    border-radius: 0 10px; 
+} 
+.main {
+    position: relative;
+}
+.footer {
+    border: 1px solid orange;
+}
+.container {
+    margin: 0 auto;
+}
+img {
+    position: relative;
+    top: 30px;
+    right: -10px;
+    border: 2px solid #2678c0;
+    border-radius: 50%;
+}
+
+/* Начало стилей меню */
+.menu {
+	width: 100%;
+	display: table;
+    cursor: pointer;
+    border-radius: 0 20px; 
+}
+.menu ul {
+	display: table-row;
+    border-radius: 0 20px;
+    font-size: medium; 
+}
+.menu li {
+	display: table-cell;
+	background: #2678c0;
+    background: linear-gradient(to top, #2678c0, #dfdada);
+}
+.menu ul li:hover, .menu a:hover {
+	background: #dfdada;
+    background: linear-gradient(to top, #dfdada, #2678c0);
+    border-radius: 0 20px;
+    transition: .6s; 
+}
+.menu li a {
+	display: block;
+	padding: 8px 15px;
+	color: rgb(75, 71, 71);
+	text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+}
+.nav-link {
+    width: 100%;
+    padding: 0 20px;
+    line-height: 50px;
+    transition: .6s;
+    cursor: pointer;
+}/* Конец стилей меню */
+h1 {
+    font-size: 40px;
+}
+
+
+/*Проверить корректность работы :visited
+a:visited { 
+    color: rebeccapurple;
+}
+*/
+
+html {
+    scroll-behavior: smooth; 
+}
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-contacts {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+  
+.section {
+    width: 50%;
+}
+.section-title {
+    color: #7b7f81;
+}
