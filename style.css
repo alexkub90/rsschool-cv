@@ -86,11 +86,12 @@ img {
     list-style-type: none;
     line-height: 3;
 }
-.github {
+ /*.github {
     background: url("/rsschool-cv/assets/GitHub_Logo.png") 0 50% no-repeat;
     list-style-type: none;
     padding-left: 50px;
-}
+} */
+
 /*Конец стилей списка контактов*/
 h1 {
     font-size: 40px;
