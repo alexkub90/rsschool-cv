@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /*прижаты к границам*/
+    background: linear-gradient(to bottom, #ffffff, #bcdaf1);
 }
 * {
     box-sizing: border-box;
@@ -20,11 +21,9 @@ body {
 } 
 .main {
     position: relative;
-    /*border: 1px solid red; убрать*/
 }
 .footer {
-    border: 1px solid orange;
-    background: #2678c0;
+    background: #668ed8;
 }
 .container {
     /*max-width: 1440px;*/
@@ -53,7 +52,7 @@ img {
 .menu li {
 	display: table-cell;
 	background: #2678c0;
-    background: linear-gradient(to top, #2678c0, #dfdada);
+    background: linear-gradient(to top, #668ed8, #dfdada);
 }
 .menu ul li:hover, .menu a:hover {
 	background: #dfdada;
@@ -151,7 +150,16 @@ html {
     color: #7b7f81;
 }
 
-/*Удаление подчеркивания ссылок*/
+.footer-git {
+    padding-left: 60px;
+}
+.footer-git:hover::after { 
+    content: attr(data-title); 
+} 
+   
+
+
+/*Стили ссылок*/
 a {
     text-decoration: none;
-  }
+}
