@@ -23,16 +23,20 @@ body {
     position: relative;
 }
 .footer {
+    display: flex;
     background: #668ed8;
+    justify-content: space-around;
 }
 .container {
     /*max-width: 1440px;*/
     margin: 0 auto;
 }
-img {
+#myPhoto {
     position: relative;
-    top: 30px;
+    top: 25px;
     right: -10px;
+    height: 300px;
+    width: 300px;
     border: 2px solid #2678c0;
     border-radius: 50%;
 }
@@ -52,7 +56,7 @@ img {
 .menu li {
 	display: table-cell;
 	background: #2678c0;
-    background: linear-gradient(to top, #668ed8, #dfdada);
+    background: linear-gradient(to top, #2678c0, #dfdada);
 }
 .menu ul li:hover, .menu a:hover {
 	background: #dfdada;
@@ -141,6 +145,12 @@ html {
     padding-left: 60px;
 }
 
+/*Стиль проекты*/
+.section-project {
+    width: 50%;
+    padding-left: 60px;
+}
+
 /*Стиль английский*/
 .section-english {
     width: 50%;
@@ -152,14 +162,30 @@ html {
 
 .footer-git {
     padding-left: 60px;
+    opacity: 80%;
+    transition: opacity 0.2s;
 }
-.footer-git:hover::after { 
-    content: attr(data-title); 
-} 
-   
+.footer-git:hover {
+    opacity: 100%;
+}
+ 
+#rs-logo {
+    padding-top: 11px;
+    width: 100px;
+    opacity: 80%;
+    transition: opacity 0.2s;
+}
+#rs-logo:hover {
+    opacity: 100%;
+}
 
+.time {
+    font-size: 20px;
+    font-weight: 700;
+}
 
 /*Стили ссылок*/
 a {
+    color: black;
     text-decoration: none;
 }
