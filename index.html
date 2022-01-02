@@ -1,12 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-    <p>Check</p>
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <ul class="nav-list">
+                  <li><a href="#contacts" class="nav-link">Contacts</a></li>
+                  <li><a href="#summary" class="nav-link">Summary</a></li>
+                  <li><a href="#skills" class="nav-link">Skills</a></li>
+                  <li><a href="#code" class="nav-link">Code</a></li>
+                  <li><a href="#project" class="nav-link">Projects</a></li>
+                  <li><a href="#education" class="nav-link">Education</a></li>
+                  <li><a href="#english" class="nav-link">English</a></li>   
+                </ul>
+              </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+           <div class="main-container">
+           <section class="section-profile" id="profile">
+                <img id="myPhoto" src="assets/MyPhoto.png" alt="Alexey Kubryakov">
+                <h1>Alexey Kubryakov</h1>
+           </section>
+           <section class="section-contacts" id="contacts">
+               <h2 class="section-title">Contacts</h2>
+               <ul class="contact-list">
+                   <li><i class="fa fa-phone" aria-hidden="true"></i>   +7 953 451 62 64</li>
+                   <li><i class="fa fa-envelope-o" aria-hidden="true"></i>  <a href="mailto:alexkub90@gmail.com"> alexkub90@gmail.com</a></li>
+                   <li><i class="fa fa-github" aria-hidden="true"></i>  <a href="https://github.com/alexkub90">alexkub90</a></li>
+               </ul>
+           </section>
+           <section class="section-summary" id="summary">
+               <h2 class="section-title">Summary</h2>
+               <p>I am 31 years old. I am from Russia, the city of Orenburg. I am an electric power engineer by profession. Currently I work as an engineer in a management organization. My friend Anton, told me about the opportunity to study at RS school, and that's why I'm here. </p>
+           </section>
+           <section class="section-skills" id="skills">
+               <h2 class="section-title">My skills</h2>
+               <ul>
+                   <li>HTML</li>
+                   <li>Basic CSS knowledge</li>
+                   <li>GIT</li>
+               </ul>
+           </section>
+           <section class="section-code" id="code">
+                <h2 class="section-title">Code</h2>
+                <pre class="javascript" style="font-family:monospace;"><span style="color: #000066; font-weight: bold;">function</span> isDivideBy<span style="color: #009900;">&#40;</span>number<span style="color: #339933;">,</span> a<span style="color: #339933;">,</span> b<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+                    <span style="color: #000066; font-weight: bold;">return</span> <span style="color: #009900;">&#40;</span>number <span style="color: #339933;">%</span> a <span style="color: #339933;">+</span> number <span style="color: #339933;">%</span> b<span style="color: #009900;">&#41;</span> <span style="color: #339933;">===</span> <span style="color: #CC0000;">0</span><span style="color: #339933;">;</span>
+                    <span style="color: #009900;">&#125;</span></pre>
+           </section>
+           <section class="section-project" id="project">
+            <h2 class="section-title">My projects</h2>
+            <p>Unfortunately, this resume is <u><a href="https://alexkub90.github.io/rsschool-cv/">my first project</a></u>, but everything is still ahead.</p>
+       </section>
+           <section class="section-education" id="education">
+                <h2 class="section-title">Education</h2>
+                <p>Moscow Institute of Technology. Faculty of Electric Power Engineering</p>
+           </section>
+           <section class="section-english" id="english">
+                <h2 class="section-title">English</h2>
+                <p>B1 intermediate</p>
+           </section>
+        </div> 
+        </div> 
+    </main>
+
+    <footer>
+     <div class="container">
+        <div class="footer">
+        <div class="footer-git">
+                <a href="https://github.com/alexkub90"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+        </div>
+        <div class="time">
+            <p>2022</p>
+        </div>
+        <div>
+            <a href="https://rs.school/js-stage0/"><img src="assets/rs_school_js.svg" alt="логотип школы rs" id="rs-logo"></a>        
+        </div>
+        </div>
+    </div>
+    </footer>
 </body>
 </html>

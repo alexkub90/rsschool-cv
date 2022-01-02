@@ -1,5 +1,188 @@
-<style>
- .class-1 {
-     font-size: 12px;
- }
- </style>
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+}
+* {
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+}
+.header {
+    border-radius: 0 10px; 
+} 
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background: #668ed8;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+#myPhoto {
+    position: relative;
+    top: 25px;
+    right: -10px;
+    height: 300px;
+    width: 300px;
+    border: 2px solid #2678c0;
+    border-radius: 50%;
+}
+
+/* Начало стилей меню */
+.menu {
+	width: 100%;
+	display: table;
+    cursor: pointer;
+    border-radius: 0 20px; 
+}
+.menu ul {
+	display: table-row;
+    border-radius: 0 20px;
+    font-size: medium; 
+}
+.menu li {
+	display: table-cell;
+	background: #2678c0;
+    background: linear-gradient(to top, #2678c0, #dfdada);
+}
+.menu ul li:hover, .menu a:hover {
+	background: #dfdada;
+    background: linear-gradient(to top, #dfdada, #2678c0);
+    border-radius: 0 20px;
+    transition: .6s; 
+}
+.menu li a {
+	display: block;
+	padding: 8px 15px;
+	color: rgb(75, 71, 71);
+	text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+}
+.nav-link {
+    width: 100%;
+    padding: 0 20px;
+    line-height: 50px;
+    transition: .6s;
+    cursor: pointer;
+}/* Конец стилей меню */
+
+/*Стили списка контактов*/
+.contact-list {
+    padding-left: 2rem;
+    list-style-type: none;
+    margin-left: -28px;
+}
+.contact-list li {
+    list-style-type: none;
+    line-height: 3;
+}
+/*Конец стилей списка контактов*/
+
+h1 {
+    font-size: 40px;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Стиль профиля*/
+.section-profile {
+    width: 50%;
+    text-align: center
+}
+
+.section {
+    width: 50%;
+}
+/*Стиль контактов*/
+.section-contacts {
+    width: 50%;
+    margin-top: 60px;
+    padding-left: 60px;
+}
+
+/*Стиль информации*/
+.section-summary {
+    width: 50%;
+    padding-left: 60px;
+}
+
+/*Cтиль навыки*/
+.section-skills {
+    width: 50%;
+    padding-left: 60px;
+}
+
+/*Стиль образование*/
+.section-education {
+    width: 50%;
+    padding-left: 60px;
+}
+
+/*Стиль код*/
+.section-code {
+    width: 50%;
+    padding-left: 60px;
+}
+
+/*Стиль проекты*/
+.section-project {
+    width: 50%;
+    padding-left: 60px;
+}
+
+/*Стиль английский*/
+.section-english {
+    width: 50%;
+    padding-left: 60px;
+}
+.section-title {
+    color: #7b7f81;
+}
+
+.footer-git {
+    padding-left: 60px;
+    opacity: 80%;
+    transition: opacity 0.2s;
+}
+.footer-git:hover {
+    opacity: 100%;
+}
+ 
+#rs-logo {
+    padding-top: 11px;
+    width: 100px;
+    opacity: 80%;
+    transition: opacity 0.2s;
+}
+#rs-logo:hover {
+    opacity: 100%;
+}
+
+.time {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*Стили ссылок*/
+a {
+    color: black;
+    text-decoration: none;
+}
